@@ -125,7 +125,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 Request.Builder builder = new Request.Builder();
-                builder.url("https://raw.githubusercontent.com/square/okhttp/master/README.md");
+                //builder.url("https://raw.githubusercontent.com/square/okhttp/master/README.md");
+                builder.url("http://www.imooc.com/api/teacher?type=3&cid=1");
+
                 Request request = builder.build();
                 Log.d(TAG, "run: " + request);
                 Call call = mClient.newCall(request);
